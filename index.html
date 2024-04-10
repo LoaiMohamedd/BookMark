@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="ima" href="Screenshot 2024-02-10 235512.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Lol</title>
+    
+</head>
+<body>
+    <div class="w-75 mx-auto py-5 hd1">
+        <h1 class="mb-2 text-center py-4">Bookmarker</h1>
+        <hr>
+        <h2 class="text-center py-4">
+            <i class="fa-solid fa-bookmark i"></i>
+            Bookmarke Your Favourite Site
+            <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <label class="py-1"for="siteName"><i class="fa-solid fa-book-bookmark pe-2"></i>Website Name</label>
+        <input type="text" placeholder="Website Name" oninput="validateName(this.value)" id="siteName" class="mb-lg-3 form-control ">
+        <label class="py-1"for="productPriceInput">
+            <i class="fa-solid fa-link pe-2">
+            </i>Site URL
+        </label>
+        <input type="text" placeholder="Website URL" oninput="validateSite(this.value)" id="siteURL" class="mb-lg-3 form-control">
+        
+        <div class="butn text-center my-4">
+        <button id="addBtn" onclick="addSite()" class="btn btn-danger  px-5">Sumbit</button>
+        </div>
+        <hr>
+    </div>
+
+    
+    <div class="w-75 mx-auto">
+        <table class="table text-center">
+            <thead>
+                <th>No.</th>
+                <th>Website Name</th>
+                <th>URL</th>
+                <th>Remove</th>
+            </thead>
+
+            <tbody id="tableBody">
+            </tbody>
+
+        </table>
+
+    </div>
+
+ 
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>
